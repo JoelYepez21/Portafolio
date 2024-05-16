@@ -1,0 +1,160 @@
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+p{
+    margin: 0;
+}
+body {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+::before,
+::after {
+  --tw-content: '';
+}
+/* estilos seccion principal */
+#section-main{
+    background-color: #15251D;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#section-main > *{
+    height: 50%;
+}
+#container-about > *{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#container-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.5rem;
+    background-color: #30833B;
+    border-radius: 1rem 20rem 20rem 1rem;
+    height: 50%;
+    padding: 1rem;
+    padding-right: 10rem;
+}
+#container-titles > h1{
+    color: #15251D;
+}
+#container-titles > h2{
+    color: white;
+}
+#aboutme-btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem;
+    align-self: center;
+    height: 9rem;
+    background: none;
+    color: #30833B;
+    border: solid #30833B;
+    border-radius: 3rem;
+    transition: ease-in-out 0.3s all;
+}
+#aboutme-btn:hover{
+    cursor: pointer;
+    background-color: #30833B;
+    color: white;
+}
+#aboutme-btn > * {
+    height: 100%;
+    width: 100%;
+}
+#container-img > img{
+    height: 100%;
+    width: 100%;
+}
+/* estilos seccion de habilidades */
+#section-skills{
+    background-color: #30833B;
+    height: 10vh;
+}
+/* estilos seccion de proyectos */
+#section-projetcs{
+    background-color: #15251D;
+    height: 10vh;
+}
+
+/* estilos footer */
+#footer{
+    background-color: #30833B;
+    color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+#part-email{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+}
+#part-email > p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#part-email > button{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: none;
+    color: white;
+    border: solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: ease-in-out 0.3s all;
+}
+#part-email > button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #30833B;
+}
+#part-socialmedia{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 70%;
+}
+#part-socialmedia > span{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.2rem;
+    border-radius: 3rem;
+    transition: ease-in-out 0.3s all;
+}
+#part-socialmedia > span:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #30833B;
+}
+#part-socialmedia > span > svg{
+    height: 70%;
+    width: 70%;
+}
+#footer > p {
+    text-align: center;    
+    font-size: 1.5rem;
+}
