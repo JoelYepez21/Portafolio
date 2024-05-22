@@ -110,9 +110,71 @@ body {
     text-align: center;
     height: 30%;
     border: solid 1px white;
-    border-radius: 1rem;
+    border-radius: 1rem;  
 }
-
+.img-ejercicio{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    opacity: 0.4;
+}
+.container-info-job{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+    height: 24%;
+    border-radius: 1rem;
+    padding: 0;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: black 0.5px;
+}
+.container-info-btns{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 20;
+    height: 24%;
+    width: 92%;
+    border-radius: 1rem;
+    padding: 0;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+    background-color: #30833B;
+    opacity: 0;
+}
+.container-info-btns:hover{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.container-info-btns > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.container-info-btns > p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.container-info-btns > div > button{
+    padding: 0.7rem;
+    border-radius: 2rem;
+    width: 30%;
+    border: none;
+    color: white;
+    background-color: #15251D;
+    border: #e5e7eb 2px solid;
+}
+.container-info-btns > div > button:hover{
+    background-color: #30833B;
+    color: #15251D;
+    border: #15251D 2px solid;
+    cursor: pointer;
+}
 /* estilos footer */
 #footer{
     background-color: #30833B;
